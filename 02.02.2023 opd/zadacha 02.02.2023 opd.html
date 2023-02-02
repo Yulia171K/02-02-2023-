@@ -20,6 +20,8 @@
     <script>
         class user {
              constructor(name, surname, age) {
+    this.login = login;
+    this,password = password;
     this.name = name;
     this.surname = surname;
     this.age = age;
@@ -35,14 +37,10 @@
             let txt4 = document.getElementById("txt4").value;
             let txt5 = document.getElementById("txt5").value;
             if (document.getElementById("txt2").value.length >= 4 && document.getElementById("txt2").value.length <=12) {
-               arr.push(txt1)
-               arr.push(txt1)
-               arr.push(txt1)
-               arr.push(txt1)
-               arr.push(txt1)
+               arr.push(new user(document.getElementById("txt1").value, document.getElementById("txt2").value, document.getElementById("txt3").value))
             }
             else return
-            console.log ("Вывод");
+            console.log (arr);
         }
         </script>
 </body>
