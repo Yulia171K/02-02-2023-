@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadash</title>
+</head>
+<body>
+    <div>
+        <p><textarea id="txt1"placeholder="Введите логин"></textarea></p>
+        <p><textarea id="txt2"placeholder="Введите пароль"></textarea></p>
+        <p><textarea id="txt3"placeholder="Фамилия"></textarea></p>
+        <p><textarea id="txt4"placeholder="Имя"></textarea></p>
+        <p><textarea id="txt5"placeholder="Возраст"></textarea></p>
+        <button id="button1">Зарегистрироваться</button>
+    </div>
+    <script>
+        class user {
+             constructor(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+  }
+
+
+        }
+        let arr = [];
+        document.getElementById("button1").onclick = function() {
+            let txt1 = document.getElementById("txt1").value;
+            let txt2 = document.getElementById("txt2").value;
+            let txt3 = document.getElementById("txt3").value;
+            let txt4 = document.getElementById("txt4").value;
+            let txt5 = document.getElementById("txt5").value;
+            if (document.getElementById("txt2").value.length >= 4 && document.getElementById("txt2").value.length <=12) {
+               arr.push(txt1)
+               arr.push(txt1)
+               arr.push(txt1)
+               arr.push(txt1)
+               arr.push(txt1)
+            }
+            else return
+            console.log ("Вывод");
+        }
+        </script>
+</body>
+</html>
